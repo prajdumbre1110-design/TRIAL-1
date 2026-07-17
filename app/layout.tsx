@@ -8,8 +8,9 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: "Finance Portfolio",
-  description: "Professional finance portfolio built with Next.js",
+  title: "Prajakta Dumbre | Finance & Investment Operations Professional",
+  description:
+    "Portfolio of Prajakta Dumbre showcasing experience in Financial Reporting, Fund Accounting, Investment Operations, Reconciliations, and Alternative Investments.",
 };
 
 export default function RootLayout({

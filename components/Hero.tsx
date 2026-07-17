@@ -1,70 +1,74 @@
-"use client";
-
-import { motion } from "framer-motion";
-
 export default function Hero() {
   return (
-    <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-950 via-slate-900 to-black text-white px-6">
-      <div className="max-w-6xl mx-auto text-center">
-        <motion.p
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          className="uppercase tracking-[0.3em] text-cyan-400 text-sm mb-4"
-        >
-          Finance • Investment Operations • Financial Reporting
-        </motion.p>
+    <section className="min-h-screen flex items-center bg-gradient-to-b from-blue-50 to-white">
+      <div className="max-w-6xl mx-auto px-6">
 
-        <motion.h1
-          initial={{ opacity: 0, y: 40 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7 }}
-          className="text-5xl md:text-7xl font-extrabold leading-tight"
-        >
-          Prajakta Dumbre
-        </motion.h1>
+        <p className="text-blue-600 font-semibold uppercase tracking-wider">
+          Finance & Investment Operations Professional
+        </p>
 
-        <motion.h2
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.4 }}
-          className="text-2xl md:text-3xl text-gray-300 mt-6"
-        >
-          Senior Finance Professional | Fund Accounting | Investment Operations
-        </motion.h2>
+        <h1 className="text-5xl md:text-7xl font-bold mt-4 leading-tight">
+          Prajakta
+          <br />
+          Dumbre
+        </h1>
 
-        <motion.p
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.7 }}
-          className="mt-8 text-gray-400 max-w-3xl mx-auto text-lg leading-8"
-        >
-          Finance professional with 5+ years of experience across Fund
-          Accounting, Financial Reporting, Reconciliations, Alternative
-          Investments, and Investment Operations, helping global financial
-          institutions deliver accurate and timely reporting.
-        </motion.p>
+        <p className="mt-8 text-gray-600 text-lg max-w-3xl leading-8">
+          Finance & Investment Operations Professional with 5+ years of
+          experience supporting global financial institutions across Financial
+          Reporting, Fund Accounting, Alternative Investments, Investment
+          Operations, and Reconciliations. Experienced in delivering accurate
+          financial reporting, maintaining operational excellence, and ensuring
+          regulatory compliance.
+        </p>
 
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 1 }}
-          className="mt-10 flex flex-col sm:flex-row gap-4 justify-center"
-        >
+        <div className="mt-10 flex gap-4 flex-wrap">
+
           <a
-            href="#experience"
-            className="rounded-xl bg-cyan-500 px-8 py-4 font-semibold hover:bg-cyan-400 transition"
+            href="/Prajakta_Dumbre_Resume.pdf"
+            target="_blank"
+            className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-xl transition"
           >
-            View Experience
+            Download Resume
           </a>
 
           <a
             href="#contact"
-            className="rounded-xl border border-gray-500 px-8 py-4 font-semibold hover:border-white transition"
+            className="border border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white px-8 py-4 rounded-xl transition"
           >
             Contact Me
           </a>
-        </motion.div>
+
+        </div>
+
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-16">
+
+          <div>
+            <h2 className="text-3xl font-bold text-blue-600">5+</h2>
+            <p className="text-gray-600">Years Experience</p>
+          </div>
+
+          <div>
+            <h2 className="text-3xl font-bold text-blue-600">3</h2>
+            <p className="text-gray-600">Leading Financial Organizations</p>
+          </div>
+
+          <div>
+            <h2 className="text-3xl font-bold text-blue-600">
+              Financial
+            </h2>
+            <p className="text-gray-600">Reporting</p>
+          </div>
+
+          <div>
+            <h2 className="text-3xl font-bold text-blue-600">
+              Alternative
+            </h2>
+            <p className="text-gray-600">Investments</p>
+          </div>
+
+        </div>
+
       </div>
     </section>
   );
