@@ -34,13 +34,13 @@ export default function Hero() {
 
           <div className="mt-10 flex flex-wrap gap-4">
 
-            <a
-              href="/Prajakta_Dumbre_Resume.pdf"
-              download
-              className="bg-blue-500 hover:bg-blue-600 px-7 py-3 rounded-lg font-semibold transition"
-            >
-              Download Resume
-            </a>
+<a
+  href="/Prajakta_Dumbre_Resume.pdf"
+  download
+  className="bg-blue-500 hover:bg-blue-600 px-7 py-3 rounded-lg font-semibold transition"
+>
+  Download Resume
+</a>
 
             <a
               href="#contact"
